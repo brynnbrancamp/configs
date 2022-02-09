@@ -54,7 +54,12 @@ colorscheme base16-gruvbox-dark-hard
 syntax on
 hi Normal ctermbg=NONE
 
-# Rust
+" Rust
 lua << END
 require('rust-tools').setup({})
 END
+
+let g:rustfmt_autosave = 1
+let g:rustfmt_emit_files = 1
+let g:rustfmt_fail_silently = 0
+let g:rust_clip_command = 'xclip -selection clipboard'
