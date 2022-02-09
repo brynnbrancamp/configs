@@ -9,3 +9,5 @@ source $ZSH/oh-my-zsh.sh
 
 # alias
 alias vim="nvim"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
