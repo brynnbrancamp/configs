@@ -11,3 +11,6 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# path
+path+=('/home/brynn/.local/bin')

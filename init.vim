@@ -1,17 +1,18 @@
 set nocompatible
 filetype off
-set rtp+=~/configs
 
 call plug#begin()
 
 " Vim enhancements
 Plug 'editorconfig/editorconfig-vim'
 Plug 'justinmk/vim-sneak'
+Plug 'tpope/vim-unimpaired'
 
 " Gui enhancements
 Plug 'itchyny/lightline.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'andymass/vim-matchup'
+Plug 'myusuf3/numbers.vim'
 
 " Fuzzy finder
 Plug 'airblade/vim-rooter'
@@ -53,6 +54,7 @@ set background=dark
 colorscheme base16-gruvbox-dark-hard
 syntax on
 hi Normal ctermbg=NONE
+hi LineNr       guibg=dark
 
 " Rust
 lua << END
@@ -65,5 +67,6 @@ let g:rustfmt_fail_silently = 0
 let g:rust_clip_command = 'xclip -selection clipboard'
 
 set splitright
+set autochdir
 set shell=/usr/bin/zsh
 tnoremap <Esc> <C-\><C-n>
