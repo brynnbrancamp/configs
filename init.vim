@@ -7,6 +7,8 @@ call plug#begin()
 Plug 'editorconfig/editorconfig-vim'
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-unimpaired'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'folke/trouble.nvim'
 
 " Gui enhancements
 Plug 'itchyny/lightline.vim'
@@ -59,6 +61,7 @@ hi LineNr       guibg=dark
 " Rust
 lua << END
 require('rust-tools').setup({})
+require("trouble").setup({})
 END
 
 let g:rustfmt_autosave = 1
