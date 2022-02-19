@@ -7,6 +7,8 @@ call plug#begin()
 Plug 'editorconfig/editorconfig-vim'
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-unimpaired'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'folke/trouble.nvim'
 
 " Gui enhancements
 Plug 'itchyny/lightline.vim'
