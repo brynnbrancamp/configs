@@ -39,6 +39,7 @@ Plug 'cespare/vim-toml'
 Plug 'rust-lang/rust.vim'
 Plug 'simrat39/rust-tools.nvim'
 Plug 'plasticboy/vim-markdown'
+Plug 'tikhomirov/vim-glsl'
 
 " Debugging
 Plug 'nvim-lua/plenary.nvim'
@@ -61,6 +62,7 @@ hi LineNr       guibg=dark
 " Rust
 lua << END
 require('rust-tools').setup({})
+require("trouble").setup({})
 END
 
 let g:rustfmt_autosave = 1
